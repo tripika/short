@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  title: 'Kerko - Short URL',
+  title: 'Kerko - Linkat',
   email: 'sink.cool@miantiao.me',
   github: 'https://github.com/tripika/shortk',
   twitter: 'https://twitter.com/valonbadivuku',

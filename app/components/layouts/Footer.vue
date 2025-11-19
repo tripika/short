@@ -11,7 +11,7 @@ const { title } = useAppConfig()
       "
     >
       <a
-        href="https://kerko.xyz"
+        href="/dashboard"
         class="
           text-xl leading-none font-black text-gray-900 select-none
           dark:text-gray-100
@@ -23,9 +23,9 @@ const { title } = useAppConfig()
           mt-4 text-sm text-gray-500
           sm:mt-0 sm:ml-4 sm:border-l sm:border-gray-200 sm:pl-4
         "
-        href="https://html.zone"
+        href="https://kerko.com"
         target="_blank"
-        title="HTML.ZONE"
+        title="KERKO"
       >
         &copy; {{ new Date().getFullYear() }} Products of HTML.ZONE
       </a>
