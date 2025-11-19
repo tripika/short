@@ -1,7 +1,5 @@
 <script setup>
-import { BloggerIcon, GitHubIcon, GmailIcon, MastodonIcon, TelegramIcon, XIcon } from 'vue3-simple-icons'
-
-const { title, email, telegram, blog, twitter, mastodon, github } = useAppConfig()
+const { title } = useAppConfig()
 </script>
 
 <template>
@@ -13,7 +11,7 @@ const { title, email, telegram, blog, twitter, mastodon, github } = useAppConfig
       "
     >
       <a
-        href="https://sink.cool"
+        href="https://kerko.xyz"
         class="
           text-xl leading-none font-black text-gray-900 select-none
           dark:text-gray-100
@@ -33,101 +31,33 @@ const { title, email, telegram, blog, twitter, mastodon, github } = useAppConfig
       </a>
       <span
         class="
-          mt-4 inline-flex justify-center space-x-5
+          mt-4 inline-flex items-center space-x-4
           sm:mt-0 sm:ml-auto sm:justify-start
         "
       >
         <a
-          v-if="email"
-          :href="`mailto:${email}`"
-          title="Email"
-          class="
-            text-gray-400
-            hover:text-gray-500
-          "
+          href="https://kerko.xyz/instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-500 hover:text-gray-700 text-sm"
         >
-          <span class="sr-only">{{ $t('layouts.footer.social.email') }}</span>
-          <GmailIcon
-            class="h-6 w-6"
-          />
+          Instagram
         </a>
         <a
-          v-if="telegram"
-          :href="telegram"
+          href="https://kerko.xyz/linkedin"
           target="_blank"
-          title="Telegram"
-          class="
-            text-gray-400
-            hover:text-gray-500
-          "
+          rel="noopener noreferrer"
+          class="text-gray-500 hover:text-gray-700 text-sm"
         >
-          <span class="sr-only">{{ $t('layouts.footer.social.telegram') }}</span>
-          <TelegramIcon
-            class="h-6 w-6"
-          />
+          Linkedin
         </a>
         <a
-          v-if="blog"
-          :href="blog"
+          href="https://kerko.xyz/facebook"
           target="_blank"
-          title="Blog"
-          class="
-            text-gray-400
-            hover:text-gray-500
-          "
+          rel="noopener noreferrer"
+          class="text-gray-500 hover:text-gray-700 text-sm"
         >
-          <span class="sr-only">{{ $t('layouts.footer.social.blog') }}</span>
-          <BloggerIcon
-            class="h-6 w-6"
-          />
-        </a>
-
-        <a
-          v-if="twitter"
-          :href="twitter"
-          target="_blank"
-          title="Twitter"
-          class="
-            text-gray-400
-            hover:text-gray-500
-          "
-        >
-          <span class="sr-only">{{ $t('layouts.footer.social.twitter') }}</span>
-          <XIcon
-            class="h-6 w-6"
-          />
-        </a>
-
-        <a
-          v-if="mastodon"
-          :href="mastodon"
-          target="_blank"
-          title="Mastodon"
-          class="
-            text-gray-400
-            hover:text-gray-500
-          "
-        >
-          <span class="sr-only">{{ $t('layouts.footer.social.mastodon') }}</span>
-          <MastodonIcon
-            class="h-6 w-6"
-          />
-        </a>
-
-        <a
-          v-if="github"
-          :href="github"
-          target="_blank"
-          title="GitHub"
-          class="
-            text-gray-400
-            hover:text-gray-500
-          "
-        >
-          <span class="sr-only">{{ $t('layouts.footer.social.github') }}</span>
-          <GitHubIcon
-            class="h-6 w-6"
-          />
+          Facebook
         </a>
       </span>
     </div>

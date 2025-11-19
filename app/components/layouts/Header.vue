@@ -31,7 +31,7 @@ const { title, github } = useAppConfig()
               class="flex h-8 w-8 items-center justify-center rounded-full"
             >
               <img
-                src="/sink.png"
+                src="/kerko.svg"
                 :alt="title"
                 class="h-full w-full rounded-full"
               >
@@ -74,7 +74,7 @@ const { title, github } = useAppConfig()
                 "
               >
                 <img
-                  src="/sink.png"
+                  src="/kerko.svg"
                   :alt="title"
                   class="h-full w-full rounded-full"
                 >
